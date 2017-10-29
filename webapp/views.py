@@ -1,10 +1,12 @@
 from pyramid.response import Response
 from pyramid.view import view_config
+from datetime import datetime as dt
+from webapp import quotes_wrapper
+from .models import Request
 import random
 import uuid
 import logging
-from datetime import datetime as dt
-from webapp import quotes_wrapper
+
 
 log = logging.getLogger(__name__)
 
@@ -12,10 +14,18 @@ log = logging.getLogger(__name__)
 class Views:
     def __init__(self, request):
         self.request = request;
+
         session = request.session
         if 'id' not in session:
             session_id = str(uuid.uuid4())
             session['id'] = session_id
+
+        route_url = request.current_route_url()
+        date = str(dt.utcnow().date())
+        time = str(dt.utcnow().time())
+
+        req_entry = Request(session_id=session['id'], date=date, time=time, page=route_url)
+        request.database.add(req_entry)
 
     @view_config(route_name='all_quotes',  renderer='templates/all_quotes.jinja2')
     def quotes(self):
