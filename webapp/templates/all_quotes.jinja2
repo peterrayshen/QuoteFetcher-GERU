@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{request.static_url('webapp:static/styles.css')}}">
+    <title>Quotes</title>
+</head>
+<body>
+<h2 id="title"> Quotes </h2>
+<ul>
+{% for item in quotes %}
+    <li>{{ item }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
