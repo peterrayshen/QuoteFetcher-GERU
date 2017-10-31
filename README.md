@@ -6,7 +6,7 @@ A simple web application that fetches quotes from an API and displays it to the 
 2. Go to project directory `cd ...\quotefetcher`
 3. Install Virtualenv in a new directory called `\venv` `python -m venv .\venv`
 4. Install dependencies `venv\Scripts\python setup.py develop`
-5. Run server using `pserve` on `development.ini` `venv\Scripts\pserve development.ini`
+5. Run server using `venv\Scripts\pserve development.ini`
 6. View server on `localhost:6543`
 ### Unix
 1. Install Virtualenv `virtualenv --no-site-packages venv`
@@ -14,7 +14,7 @@ A simple web application that fetches quotes from an API and displays it to the 
 3. Clone git repository `git clone https://github.com/peterrayshen/QuoteFetcher.git`
 4. Go to project directory `cd quotefetcher`
 5. Install dependencies `python setup.py develop`
-6. Run server using `pserve` on `development.ini` `pserve development.ini`
+6. Run server using `pserve development.ini`
 7. View server on `localhost:6543`
 ## SQL Database
 ### Requests
