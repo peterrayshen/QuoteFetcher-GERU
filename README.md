@@ -16,6 +16,11 @@ A simple web application that fetches quotes from an API and displays it to the 
 5. Install dependencies `python setup.py develop`
 6. Run server using `pserve development.ini`
 7. View server on `localhost:6543`
+## Page Routes
+ * `/` - Presents a page containing a title that reads "Web Challenge 1.0 By Peter Ray Shen".
+ * `/quotes` - Presents a page containing all quotes returned by the API
+ * `/quotes/<quote_number>` - Presents a page containing the `<quote_number>` quote returned by the API.
+ * `/quotes/random` - Present a page containing a random quote. 
 ## SQL Database
 ### Requests
 Page requests are stored into the database according to the following table model:
