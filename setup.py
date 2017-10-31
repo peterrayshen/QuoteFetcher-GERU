@@ -5,7 +5,7 @@ requires = ['pyramid',
             'requests',
             'pyramid_jinja2',
             'sqlalchemy',
-            'cornice'
+            'pyramid_debugtoolbar',
             ]
 
 setup(name='quotefetcher',

@@ -3,4 +3,4 @@ waitress
 requests
 pyramid_jinja2
 sqlalchemy
-cornice
+pyramid_debugtoolbar

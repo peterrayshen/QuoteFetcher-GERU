@@ -79,7 +79,7 @@ class RESTViews:
             requests = []
             for request in session.requests:
                 requests.append(get_request_info(request))
-            return {"session_id": session.session_id, 'requests:': requests}
+            return {"session_id": session.session_id, 'requests': requests}
         else:
             return {'error': 'Not Found'}
 

@@ -4,7 +4,7 @@ from pyramid.session import SignedCookieSessionFactory
 from sqlalchemy import engine_from_config
 from sqlalchemy.orm import sessionmaker
 
-from webapp.tools import quotes_wrapper
+from webapp import quotes_wrapper
 from .models import Base
 
 
@@ -29,7 +29,7 @@ def main(global_config, **settings):
     Base.metadata.create_all(engine)
     config.registry.dbmaker = sessionmaker(bind=engine)
 
-    my_session_factory = SignedCookieSessionFactory('factory')
+    my_session_factory = SignedCookieSessionFactory('secret')
     config.set_session_factory(my_session_factory)
 
     config.add_request_method(database, reify=True)
