@@ -12,7 +12,7 @@ setup(name='quotefetcher',
       install_requires=requires,
       entry_points={
         'paste.app_factory': [
-            'main = webapp:main',
+            'main = quotefetcher:main',
         ]},
       author='Peter Ray Shen',
       author_email='prshen@edu.uwaterloo.ca',

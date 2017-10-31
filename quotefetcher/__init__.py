@@ -3,7 +3,7 @@ from pyramid.renderers import JSON
 from pyramid.session import SignedCookieSessionFactory
 from sqlalchemy import engine_from_config
 from sqlalchemy.orm import sessionmaker
-from webapp import quotes_wrapper
+from quotefetcher import quotes_wrapper
 from .models import Base
 
 

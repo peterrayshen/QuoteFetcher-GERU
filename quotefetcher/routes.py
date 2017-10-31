@@ -1,6 +1,6 @@
 def includeme(config):
     """Add routes and static views to application configuration"""
-    config.add_static_view(name='static', path='webapp:static')
+    config.add_static_view(name='static', path='quotefetcher:static')
 
     config.add_route('home', '/')
     config.add_route('all_quotes', '/quotes')
