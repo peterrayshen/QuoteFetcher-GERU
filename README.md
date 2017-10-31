@@ -48,6 +48,6 @@ Example:
 ```
 * `GET` `/api/requests/<uid>` - returns a `request` corresponding to `<uid>`
 * `GET` `/api/requests/session/<session_id>` - returns every `request` corresponding to `<session_id>`
-* `GET` `/api/requests/date/<date>` - returns every `request` during `<date>` where `<date>` is in the form `YYYY-MM-DD`
+* `GET` `/api/requests/date/<date>` - returns every `request` during `<date>` in the form `YYYY-MM-DD`
 
 
