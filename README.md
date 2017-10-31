@@ -21,6 +21,8 @@ A simple web application that fetches quotes from an API and displays it to the 
  * `/quotes` - Presents a page containing all quotes returned by the API
  * `/quotes/<quote_number>` - Presents a page containing the `<quote_number>` quote returned by the API.
  * `/quotes/random` - Present a page containing a random quote. 
+ ### API
+ The quotes API used by the application: https://1c22eh3aj8.execute-api.us-east-1.amazonaws.com/challenge/quotes
 ## SQL Database
 ### Requests
 Page requests are stored into the database according to the following table model:
