@@ -1,3 +1,0 @@
-pyramid
-waitress
-pyramid_chameleon

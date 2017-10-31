@@ -1,0 +1,6 @@
+pyramid
+waitress
+requests
+pyramid_jinja2
+sqlalchemy
+cornice

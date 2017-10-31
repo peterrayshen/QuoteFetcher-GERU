@@ -1,0 +1,7 @@
+setup.py
+quotefetcher.egg-info/PKG-INFO
+quotefetcher.egg-info/SOURCES.txt
+quotefetcher.egg-info/dependency_links.txt
+quotefetcher.egg-info/entry_points.txt
+quotefetcher.egg-info/requires.txt
+quotefetcher.egg-info/top_level.txt

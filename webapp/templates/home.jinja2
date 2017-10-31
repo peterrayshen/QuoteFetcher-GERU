@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Quick Tutorial: {{ first_name }} {{ last_name }}</title>
+    <link rel="stylesheet" href="{{request.static_url('webapp:static/styles.css')}}">
+    <title>{{ message }}</title>
 </head>
 <body>
-<h1>Hi {{ address }}</h1>
+<h1>{{ message }}</h1>
+<p>By {{ author }}</p>
 </body>
 </html>

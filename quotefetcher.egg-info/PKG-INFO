@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: quotefetcher
+Version: 0.0.0
+Summary: Simple web application that fetches quotes from an API, displays to user and stores requests 
+      in a SQL database
+Home-page: UNKNOWN
+Author: Peter Ray Shen
+Author-email: prshen@edu.uwaterloo.ca
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

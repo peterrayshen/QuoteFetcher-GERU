@@ -2,14 +2,12 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="{{request.static_url('webapp:static/styles.css')}}">
-    <title>Quotes</title>
+    <title>Quote {{ quote_num }}</title>
 </head>
 <body>
-<h2 id="title"> Quotes </h2>
+<h2 id="title">Quote {{ quote_num }}</h2>
 <ul id="quotes">
-{% for item in quotes %}
-    <li>{{ item }}</li>
-{% endfor %}
+{{ quote }}
 </ul>
 </body>
 </html>
