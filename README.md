@@ -3,7 +3,7 @@ A simple web application that fetches quotes from an API and displays it to the 
 ## API
 ### Querying requests/sessions
 #### Sessions
-* `/api/sessions` - returns every `session` in the database formatted as a `json` :
+* `GET` `/api/sessions` - returns every `session` in the database formatted as a `json` :
 ```
      {
          "sessions": [
@@ -19,7 +19,7 @@ A simple web application that fetches quotes from an API and displays it to the 
           ]
      }
 ```
-* `/api/sessions/<id>` - returns a `session` corresponding to `<id>`:
+* `GET` `/api/sessions/<id>` - returns a `session` corresponding to `<id>`:
 ```
      {
             "session_id": "<id>",
@@ -27,7 +27,7 @@ A simple web application that fetches quotes from an API and displays it to the 
      }
 ```
 #### Requests
-* `/api/requests` - returns every `request` in the database formatted as a `json`:
+* `GET` `/api/requests` - returns every `request` in the database formatted as a `json`:
 Example:
 ```
      {
@@ -46,8 +46,8 @@ Example:
              },
              ...
 ```
-* `/api/requests/<uid>` - returns a `request` corresponding to `<uid>`
-* `/api/requests/session/<session_id>` - returns every `request` corresponding to `<session_id>`
-* `/api/requests/date/<date>` - returns every `request` during `<date>` where `<date>` is in the form `YYYY-MM-DD`
+* `GET` `/api/requests/<uid>` - returns a `request` corresponding to `<uid>`
+* `GET` `/api/requests/session/<session_id>` - returns every `request` corresponding to `<session_id>`
+* `GET` `/api/requests/date/<date>` - returns every `request` during `<date>` where `<date>` is in the form `YYYY-MM-DD`
 
 
