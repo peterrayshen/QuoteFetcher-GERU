@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f665850-c479-46a5-8dfb-eb80866cdf34" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/__init__.py" afterPath="$PROJECT_DIR$/quotefetcher/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/models.py" afterPath="$PROJECT_DIR$/quotefetcher/models.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/quotes_wrapper.py" afterPath="$PROJECT_DIR$/quotefetcher/quotes_wrapper.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/routes.py" afterPath="$PROJECT_DIR$/quotefetcher/routes.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/static/styles.css" afterPath="$PROJECT_DIR$/quotefetcher/static/styles.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/templates/all_quotes.jinja2" afterPath="$PROJECT_DIR$/quotefetcher/templates/all_quotes.jinja2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/templates/home.jinja2" afterPath="$PROJECT_DIR$/quotefetcher/templates/home.jinja2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/templates/single_quote.jinja2" afterPath="$PROJECT_DIR$/quotefetcher/templates/single_quote.jinja2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/views/__init__.py" afterPath="$PROJECT_DIR$/quotefetcher/views/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/views/quotes.py" afterPath="$PROJECT_DIR$/quotefetcher/views/quotes.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/views/rest.py" afterPath="$PROJECT_DIR$/quotefetcher/views/rest.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite" afterPath="$PROJECT_DIR$/db.sqlite" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quotefetcher.egg-info/entry_points.txt" afterPath="$PROJECT_DIR$/quotefetcher.egg-info/entry_points.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quotefetcher/quotes_wrapper.py" afterPath="$PROJECT_DIR$/quotefetcher/quotes_wrapper.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quotefetcher/routes.py" afterPath="$PROJECT_DIR$/quotefetcher/routes.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quotefetcher/views/quotes.py" afterPath="$PROJECT_DIR$/quotefetcher/views/quotes.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quotefetcher/views/rest.py" afterPath="$PROJECT_DIR$/quotefetcher/views/rest.py" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,67 +20,61 @@
     <SUITE FILE_PATH="coverage/Single_File_App$app.coverage" NAME="app Coverage Results" MODIFIED="1508967585319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QuoteFetcher$setup.coverage" NAME="setup Coverage Results" MODIFIED="1509411606415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Single_File_App$setup.coverage" NAME="setup Coverage Results" MODIFIED="1509217490052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/QuoteFetcher$WebApp1.coverage" NAME="WebApp1 Coverage Results" MODIFIED="1509471120494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/QuoteFetcher$WebApp1.coverage" NAME="WebApp1 Coverage Results" MODIFIED="1509472043613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/QuoteFetcher$initialize_db.coverage" NAME="initialize_db Coverage Results" MODIFIED="1509316690173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/webapp" />
     <SUITE FILE_PATH="coverage/Single_File_App$WebApp1.coverage" NAME="WebApp1 Coverage Results" MODIFIED="1509229091908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="development.ini" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/development.ini">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="54" lean-forward="false" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="routes.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/quotefetcher/routes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="13" column="48" lean-forward="true" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requires.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quotefetcher.egg-info/requires.txt">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quotefetcher/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="408">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#68#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quotes_wrapper.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quotefetcher/quotes_wrapper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quotes.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/quotefetcher/views/quotes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="41" column="71" lean-forward="true" selection-start-line="41" selection-start-column="71" selection-end-line="42" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PKG-INFO" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quotefetcher.egg-info/PKG-INFO">
+      <file leaf-file-name="rest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quotefetcher/views/rest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="10" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="entry_points.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quotefetcher.egg-info/entry_points.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quotefetcher/static/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="178">
+              <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -116,21 +100,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="single_quote.jinja2" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/quotefetcher/templates/single_quote.jinja2">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quotefetcher/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            <state relative-caret-position="425">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quotefetcher/views/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dependency_links.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quotefetcher.egg-info/dependency_links.txt">
+      <file leaf-file-name="single_quote.jinja2" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quotefetcher/templates/single_quote.jinja2">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -180,6 +176,10 @@
         <option value="$PROJECT_DIR$/quotefetcher/templates/all_quotes.jinja2" />
         <option value="$PROJECT_DIR$/quotefetcher/templates/home.jinja2" />
         <option value="$PROJECT_DIR$/quotefetcher/templates/single_quote.jinja2" />
+        <option value="$PROJECT_DIR$/quotefetcher/quotes_wrapper.py" />
+        <option value="$PROJECT_DIR$/quotefetcher/views/rest.py" />
+        <option value="$PROJECT_DIR$/quotefetcher/routes.py" />
+        <option value="$PROJECT_DIR$/quotefetcher/views/quotes.py" />
       </list>
     </option>
   </component>
@@ -223,6 +223,12 @@
               <item name="QuoteFetcher" type="b2602c69:ProjectViewProjectNode" />
               <item name="QuoteFetcher" type="462c0819:PsiDirectoryNode" />
               <item name="quotefetcher" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuoteFetcher" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuoteFetcher" type="462c0819:PsiDirectoryNode" />
+              <item name="quotefetcher" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -486,64 +492,6 @@
     <entry file="file://$PROJECT_DIR$/webapp.egg-info/PKG-INFO" />
     <entry file="file://$PROJECT_DIR$/webapp.egg-info/SOURCES.txt" />
     <entry file="file://$PROJECT_DIR$/webapp/tools/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/quotefetcher/views/rest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="57" column="57" lean-forward="false" selection-start-line="57" selection-start-column="57" selection-end-line="57" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quotefetcher/views/quotes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="59" lean-forward="false" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quotefetcher/views/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quotefetcher/quotes_wrapper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quotefetcher/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quotefetcher/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -611,14 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quotefetcher/routes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/development.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -663,6 +603,68 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quotefetcher/quotes_wrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quotefetcher/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quotefetcher/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quotefetcher/views/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quotefetcher/views/rest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quotefetcher/routes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="48" lean-forward="true" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quotefetcher/views/quotes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="41" column="71" lean-forward="true" selection-start-line="41" selection-start-column="71" selection-end-line="42" selection-end-column="19" />
           <folding />
         </state>
       </provider>

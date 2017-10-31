@@ -2,7 +2,7 @@ import requests
 import json
 
 
-def all_quotes():
+def get_quotes():
     """Get and return all quotes from the API as a Python list"""
     resp = requests.get('https://1c22eh3aj8.execute-api.us-east-1.amazonaws.com/challenge/quotes')
     try:
@@ -12,7 +12,7 @@ def all_quotes():
         return ['Error: Quotes not found', ]
 
 
-def quote(quote_number):
+def get_quote(quote_number):
     """Get and return a single quote from the API"""
     resp = requests.get(
         'https://1c22eh3aj8.execute-api.us-east-1.amazonaws.com/challenge/quotes/{}'.format(quote_number))

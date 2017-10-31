@@ -3,13 +3,13 @@ def includeme(config):
     config.add_static_view(name='static', path='quotefetcher:static')
 
     config.add_route('home', '/')
-    config.add_route('all_quotes', '/quotes')
-    config.add_route('one_quote', '/quotes/{quote_id}')
+    config.add_route('quotes_all', '/quotes')
+    config.add_route('quotes_single', '/quotes/{quote_id}')
 
-    config.add_route('sessions_all_json', '/api/sessions')
-    config.add_route('sessions_id_json', '/api/sessions/id/{session_id}')
+    config.add_route('sessions_all', '/api/sessions')
+    config.add_route('sessions_by_id', '/api/sessions/id/{session_id}')
 
-    config.add_route('requests_all_json', '/api/requests')
-    config.add_route('requests_single_json', '/api/requests/{request_uid}')
-    config.add_route('requests_date_json', '/api/requests/date/{date}')
-    config.add_route('requests_session_json', '/api/requests/session/{session_id}')
+    config.add_route('requests_all', '/api/requests')
+    config.add_route('requests_by_uid', '/api/requests/{request_uid}')
+    config.add_route('requests_by_date', '/api/requests/date/{date}')
+    config.add_route('requests_by_session', '/api/requests/session/{session_id}')

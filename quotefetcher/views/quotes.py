@@ -23,21 +23,21 @@ class QuoteViews:
         req_entry = Request(session_id=session['id'], page=route_path)
         request.database.add(req_entry)
 
-    @view_config(route_name='all_quotes', renderer='./templates/all_quotes.jinja2')
+    @view_config(route_name='quotes_all', renderer='./templates/all_quotes.jinja2')
     def quotes(self):
         """Return a list of all quotes to the template for rendering"""
-        return {'quotes': quotes_wrapper.all_quotes()}
+        return {'quotes': quotes_wrapper.get_quotes()}
 
-    @view_config(route_name='one_quote', renderer='./templates/single_quote.jinja2')
+    @view_config(route_name='quotes_single', renderer='./templates/single_quote.jinja2')
     def single_quote(self):
         """Return a single quote to the template for rendering"""
         quote_id = self.request.matchdict['quote_id']
         if quote_id == 'random':
-            random_num = random.randrange(0, len(quotes_wrapper.all_quotes()))
-            return {'quote': quotes_wrapper.quote(random_num), 'quote_num': random_num + 1}
+            random_num = random.randrange(0, len(quotes_wrapper.get_quotes()))
+            return {'quote': quotes_wrapper.get_quote(random_num), 'quote_num': random_num + 1}
         else:
             quote_num = int(quote_id) - 1
-            return {'quote': quotes_wrapper.quote(quote_num), 'quote_num': quote_num + 1}
+            return {'quote': quotes_wrapper.get_quote(quote_num), 'quote_num': quote_num + 1}
 
     @view_config(route_name='home', renderer='./templates/home.jinja2')
     def home(self):

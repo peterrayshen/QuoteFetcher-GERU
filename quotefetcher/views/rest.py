@@ -17,7 +17,7 @@ class RESTViews:
     def __init__(self, request):
         self.request = request;
 
-    @view_config(route_name='requests_all_json', renderer='pretty_json')
+    @view_config(route_name='requests_all', renderer='pretty_json')
     def requests_all_json(self):
         """Return every request and corresponding info as JSON"""
         context = []
@@ -25,7 +25,7 @@ class RESTViews:
             context.append(request_info(request))
         return {"requests": context}
 
-    @view_config(route_name='requests_single_json', renderer='pretty_json')
+    @view_config(route_name='requests_by_uid', renderer='pretty_json')
     def requests_single_json(self):
         """Return single request and corresponding info as JSON"""
         uid = self.request.matchdict['request_uid']
@@ -35,7 +35,7 @@ class RESTViews:
         else:
             return {"error": "Not Found"}
 
-    @view_config(route_name='requests_date_json', renderer='pretty_json')
+    @view_config(route_name='requests_by_date', renderer='pretty_json')
     def requests_date_json(self):
         """Return all requests and corresponding info within a day (YYYY-MM-DD) as JSON"""
         date = self.request.matchdict['date']
@@ -52,7 +52,7 @@ class RESTViews:
         except ValueError:
             return {"error": "Not Found"}
 
-    @view_config(route_name='requests_session_json', renderer='pretty_json')
+    @view_config(route_name='requests_by_session', renderer='pretty_json')
     def requests_session_json(self):
         """Return all requests within a given session_id as JSON"""
         session_id = self.request.matchdict['session_id']
@@ -66,7 +66,7 @@ class RESTViews:
                 context.append(request_info(request))
             return {"requests": context}
 
-    @view_config(route_name='sessions_all_json', renderer='pretty_json')
+    @view_config(route_name='sessions_all', renderer='pretty_json')
     def sessions_all_json(self):
         """Return all sessions and corresponding info as JSON"""
         context = []
@@ -78,7 +78,7 @@ class RESTViews:
             context.append(session_info)
         return {"sessions": context}
 
-    @view_config(route_name='sessions_id_json', renderer='pretty_json')
+    @view_config(route_name='sessions_by_id', renderer='pretty_json')
     def sessions_id_json(self):
         """Returns a session given a session_id, as JSON"""
         session_id = self.request.matchdict['session_id']
