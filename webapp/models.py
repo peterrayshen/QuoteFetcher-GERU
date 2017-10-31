@@ -7,6 +7,7 @@ Base = declarative_base()
 
 
 class Request(Base):
+    """Model of a view request"""
     __tablename__ = 'requests'
     uid = Column(Integer, primary_key=True)
     session_id = Column(Text, ForeignKey('sessions.session_id'))
@@ -16,6 +17,7 @@ class Request(Base):
 
 
 class Session(Base):
+    """Model of a user's browsing session"""
     __tablename__ = 'sessions'
     uid = Column(Integer, primary_key=True)
     session_id = Column(Text, nullable=False)

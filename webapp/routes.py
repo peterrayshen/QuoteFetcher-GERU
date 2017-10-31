@@ -1,4 +1,5 @@
 def includeme(config):
+    """Add routes and static views to application configuration"""
     config.add_static_view(name='static', path='webapp:static')
 
     config.add_route('home', '/')
