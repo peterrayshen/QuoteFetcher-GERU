@@ -20,7 +20,7 @@ class Session(Base):
     session_id = Column(Text, nullable=False)
     requests = relationship("Request")
 ```
-As seen, there is a one-to-many relationship between sessions and requests. Each session is binded to multiple request and each request is binded to a singular session.
+As seen, there is a one-to-many relationship between sessions and requests. Each session is binded to multiple requests.
 ## API
 ### Querying requests/sessions
 #### Sessions
