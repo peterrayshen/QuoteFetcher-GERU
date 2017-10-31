@@ -1,5 +1,26 @@
 # QuoteFetcher
 A simple web application that fetches quotes from an API and displays it to the user. Created with Pyramid.
+## SQL Database
+### Requests
+Page requests are stored into the database according to the following table model:
+```
+class Request(Base):
+    __tablename__ = 'requests'
+    uid = Column(Integer, primary_key=True)
+    session_id = Column(Text, ForeignKey('sessions.session_id'))
+    page = Column(Text, nullable=False)
+    time = Column(Time, default=dt.utcnow().time())
+    date = Column(Date, default=dt.utcnow().date())
+```
+Browsing sessions are stored into the database according to the following table model:
+```
+class Session(Base):
+    __tablename__ = 'sessions'
+    uid = Column(Integer, primary_key=True)
+    session_id = Column(Text, nullable=False)
+    requests = relationship("Request")
+```
+As seen, there is a one-to-many relationship between sessions and requests. Each session is binded to multiple request and each request is binded to a singular session.
 ## API
 ### Querying requests/sessions
 #### Sessions
