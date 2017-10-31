@@ -1,8 +1,6 @@
 import random
 import uuid
-
 from pyramid.view import view_config
-
 from webapp import quotes_wrapper
 from ..models import Request, Session
 

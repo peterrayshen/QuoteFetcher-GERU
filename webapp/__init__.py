@@ -27,12 +27,12 @@ def main(global_config, **settings):
     """Configure application settings"""
     config = Configurator(settings=settings)
 
-    """Store SQLAlchemy session factory in application registry"""
+    #  Store SQLAlchemy session factory in application registry
     engine = engine_from_config(settings, prefix='sqlalchemy.', echo=True)
     Base.metadata.create_all(engine)
     config.registry.dbmaker = sessionmaker(bind=engine)
 
-    """Initialize session factory"""
+    #  Initialize session factory
     my_session_factory = SignedCookieSessionFactory('secret')
     config.set_session_factory(my_session_factory)
 

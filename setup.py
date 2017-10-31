@@ -16,7 +16,7 @@ setup(name='quotefetcher',
         ]},
       author='Peter Ray Shen',
       author_email='prshen@edu.uwaterloo.ca',
-      description='''Simple web application that fetches quotes from an API, displays to user and stores requests 
+      description='''Simple web application that fetches quotes from an API, displays to user and stores requests/sessions 
       in a SQL database''',
 
 )
