@@ -63,7 +63,7 @@ session_id = str(uuid.uuid4())
           ]
      }
 ``` 
-* `GET` `/api/sessions/<session_id>` - returns a `session` corresponding to `<session_id>`:
+* `GET` `/api/sessions/id/<session_id>` - returns a `session` corresponding to `<session_id>`:
 ```
      {
             "session_id": "<session_id>",
