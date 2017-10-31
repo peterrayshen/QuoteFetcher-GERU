@@ -7,6 +7,7 @@ from ..models import Request, Session
 
 class QuoteViews:
     """View class containing all views for display of quotes to user"""
+
     def __init__(self, request):
         self.request = request;
         session = request.session
@@ -42,7 +43,3 @@ class QuoteViews:
     def home(self):
         """Return display message for home page template"""
         return {'message': "Web Challenge 1.0", 'author': 'Peter Ray Shen'}
-
-
-
-

@@ -22,5 +22,3 @@ class Session(Base):
     uid = Column(Integer, primary_key=True)
     session_id = Column(Text, nullable=False)
     requests = relationship("Request")
-
-

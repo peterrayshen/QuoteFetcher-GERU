@@ -13,4 +13,3 @@ def includeme(config):
     config.add_route('requests_single_json', '/api/requests/{request_uid}')
     config.add_route('requests_date_json', '/api/requests/date/{date}')
     config.add_route('requests_session_json', '/api/requests/session/{session_id}')
-

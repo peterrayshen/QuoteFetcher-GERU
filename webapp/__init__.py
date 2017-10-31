@@ -19,6 +19,7 @@ def database(request):
         else:
             session.commit()
         session.close()
+
     request.add_finished_callback(cleanup)
     return session
 
@@ -42,5 +43,3 @@ def main(global_config, **settings):
     config.scan()  # scan all packages for View classes and @view_config decorates
 
     return config.make_wsgi_app()
-
-

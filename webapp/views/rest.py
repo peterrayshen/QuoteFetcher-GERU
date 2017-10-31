@@ -13,6 +13,7 @@ def request_info(request):
 
 class RESTViews:
     """View class containing all views for RESTful API endpoints"""
+
     def __init__(self, request):
         self.request = request;
 
@@ -39,7 +40,8 @@ class RESTViews:
         """Return all requests and corresponding info within a day (YYYY-MM-DD) as JSON"""
         date = self.request.matchdict['date']
         try:
-            requests = self.request.database.query(Request).filter(Request.date == dt.strptime(date, '%Y-%m-%d').date()).all()
+            requests = self.request.database.query(Request).filter(
+                Request.date == dt.strptime(date, '%Y-%m-%d').date()).all()
             context = []
             if len(requests) == 0:
                 return {"error": "Not Found"}
@@ -89,5 +91,3 @@ class RESTViews:
             return {"session_id": session.session_id, 'requests': requests}
         else:
             return {'error': 'Not Found'}
-
-
