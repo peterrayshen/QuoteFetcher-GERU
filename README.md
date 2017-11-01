@@ -1,19 +1,20 @@
 # QuoteFetcher
-A simple web application that fetches quotes from an API and displays it to the user. Created with Pyramid.
+A simple web application that fetches quotes from an API, displays it to the user and stores requests/session information in a database. Created with Pyramid.
 ## Getting Started
 ### Windows
 1. Clone git repository `git clone https://github.com/peterrayshen/QuoteFetcher.git`
-2. Go to project directory `cd ...\quotefetcher`
-3. Install Virtualenv in a new directory called `\venv` `python -m venv .\venv`
-4. Install dependencies `venv\Scripts\python setup.py develop`
-5. Run server using `venv\Scripts\pserve development.ini`
+2. Go to project directory `cd ...\QuoteFetcher`
+3. Install Virtualenv in a new directory `python -m venv .\venv`
+4. Activate Virtualenv `venv\Scripts\activate`
+4. Install dependencies `pip install -e`
+5. Run server using `pserve development.ini`
 6. View server on `localhost:6543`
 ### Unix
 1. Install Virtualenv `virtualenv --no-site-packages venv`
 2. Activate Virtualenv `venv/bin/activate`
 3. Clone git repository `git clone https://github.com/peterrayshen/QuoteFetcher.git`
-4. Go to project directory `cd quotefetcher`
-5. Install dependencies `python setup.py develop`
+4. Go to project directory `cd QuoteFetcher`
+5. Install dependencies `pip install -e`
 6. Run server using `pserve development.ini`
 7. View server on `localhost:6543`
 ## Page Routes
