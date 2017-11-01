@@ -3,6 +3,7 @@ import uuid
 from pyramid.view import view_config
 from quotefetcher import quotes_wrapper
 from ..models import Request, Session
+from datetime import datetime as dt
 
 
 class QuoteViews:
@@ -20,7 +21,7 @@ class QuoteViews:
 
         # store request in database
         route_path = request.current_route_path()
-        req_entry = Request(session_id=session['id'], page=route_path)
+        req_entry = Request(session_id=session['id'], page=route_path, date=dt.utcnow().date(), time=dt.utcnow().time())
         request.database.add(req_entry)
 
     @view_config(route_name='quotes_all', renderer='./templates/all_quotes.jinja2')
