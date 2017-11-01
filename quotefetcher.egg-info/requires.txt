@@ -1,6 +1,0 @@
-pyramid
-waitress
-requests
-pyramid_jinja2
-sqlalchemy
-pyramid_debugtoolbar
